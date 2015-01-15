@@ -1,0 +1,41 @@
+f@charset "UTF-8";
+
+/* 
+CSS Document
+Author: Nick Zetzl
+aboutme website style sheet
+Last Update: 10/26/14
+*/
+
+address {
+	text-align: center; 
+	font-style: italic; 
+	font-family: serif; 
+	font-size: .9em;
+}
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+#githubPic {
+    text-align: center;
+    height: 180px;
+    width: 180x;
+}
+
+#linkedInPic {
+    text-align: center;
+    height: 180px;
+    width: 180x;
+}
+
+#emailPic {
+    text-align: right;
+    height: 180px;
+    width: 180x;
+}
+
