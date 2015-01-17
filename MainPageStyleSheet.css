@@ -8,6 +8,7 @@ Last Update: 10/26/14
 */
 
 address {
+    width: 100%;
 	text-align: center; 
 	font-style: italic; 
 	font-family: serif; 
@@ -22,20 +23,23 @@ h3 {
 }
 
 #githubPic {
-    text-align: center;
+    float 
+    padding-left: 10px;
+    padding-right: 10px;
     height: 180px;
     width: 180x;
 }
 
 #linkedInPic {
-    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
     height: 180px;
     width: 180x;
 }
 
 #emailPic {
-    text-align: right;
+    padding-left: 10px;
+    padding-right: 10px;
     height: 180px;
     width: 180x;
 }
-
