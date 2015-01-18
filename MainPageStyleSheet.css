@@ -16,30 +16,55 @@ address {
 }
 h1 {
     text-align: center;
+    font-size: 5em;
 }
 
 h3 {
     text-align: center;
+    font-size: 1.7em;
 }
 
 #githubPic {
-    float 
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     height: 180px;
     width: 180x;
 }
 
 #linkedInPic {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     height: 180px;
     width: 180x;
 }
 
 #emailPic {
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 180px;
-    width: 180x;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 175px;
+    width: 175x;
+}
+
+#container {
+    float: right;
+    width: 75%;
+}
+#resume {
+    font-size: 2em;
+    position: absolute;
+    top: 480px;
+    left: 590px;
+    text-align: center;
+}
+
+#address_break {
+    width: 100%;
+    position: absolute;
+    top: 95%;
+}
+address {
+    float: right;
+    position: absolute;
+    top: 97%;
+    right: 35%;
 }
