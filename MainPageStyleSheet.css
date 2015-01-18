@@ -14,6 +14,7 @@ address {
 	font-family: serif; 
 	font-size: .9em;
 }
+
 h1 {
     text-align: center;
     font-size: 5em;
@@ -49,6 +50,7 @@ h3 {
     float: right;
     width: 75%;
 }
+
 #resume {
     font-size: 2em;
     position: absolute;
@@ -62,6 +64,7 @@ h3 {
     position: absolute;
     top: 95%;
 }
+
 address {
     float: right;
     position: absolute;
