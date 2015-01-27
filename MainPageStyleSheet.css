@@ -3,27 +3,48 @@ f@charset "UTF-8";
 /* 
 CSS Document
 Author: Nick Zetzl
-aboutme website style sheet
+website style sheet
 Last Update: 10/26/14
 */
-
-address {
-    width: 100%;
-	text-align: center; 
-	font-style: italic; 
-	font-family: serif; 
-	font-size: .9em;
+ol {
+    
+    
 }
 
 h1 {
     text-align: center;
-    font-size: 5em;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 6em;
     color: #147ABC;
+    margin-bottom: 0px;
 }
 
-h3 {
+p {
     text-align: center;
-    font-size: 1.7em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+    width: 300px;
+}
+
+ul {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: auto;
+}
+
+li {
+    font-size: 1.8em;
+    list-style-type: none;
+    display: inline;
+    margin-right: 30px;
+    color: #999999;
+}
+
+li:hover {
+    color:#147ABC;
 }
 
 #githubPic {
@@ -48,16 +69,14 @@ h3 {
 }
 
 #container {
-    float: right;
-    width: 75%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #resume {
     font-size: 2em;
-    position: absolute;
-    top: 480px;
-    left: 590px;
-    text-align: center;
+    padding-top: 20px;
 }
 
 #address_break {
@@ -67,8 +86,13 @@ h3 {
 }
 
 address {
-    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     position: absolute;
     top: 97%;
-    right: 35%;
+    width: 100%;
+	font-style: italic; 
+	font-family: serif; 
+	font-size: .9em;
 }
