@@ -40,6 +40,7 @@ p {
     display: inline;
     margin-right: 30px;
     color: #999999;
+    cursor: pointer;
 }
 
 .tabs:hover {
@@ -76,6 +77,18 @@ p {
 #resume {
     font-size: 2em;
     padding-top: 20px;
+}
+
+#skills {
+    display: none;
+}
+
+#interests {
+    display: none;
+}
+
+#projects {
+    display: none;
 }
 
 #address_break {
