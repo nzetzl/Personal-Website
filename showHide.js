@@ -3,30 +3,30 @@
 $(document).ready(function () {
     
 
-$(".tabs").click(function () {
-    "use strict";
-    $(".section").hide();
-});
+    $(".tabs").click(function () {
+        "use strict";
+        $(".section").hide();
+    });
 
-$("#homeTab").click(function () {
-    "use strict";
-    $("#home").show(1000);
-});
+    $("#homeTab").click(function () {
+        "use strict";
+        $("#home").show();
+    });
 
-$("#skillsTab").click(function () {
-    "use strict";
-    $("#skills").show(1000);
-});
+    $("#skillsTab").click(function () {
+        "use strict";
+        $("#skills").show();
+    });
 
-$("#interestsTab").click(function () {
-    "use strict";
-    $("#interests").show(1000);
-});
+    $("#interestsTab").click(function () {
+        "use strict";
+        $("#interests").show();
+    });
 
-$("#projectsTab").click(function () {
-    "use strict";
-    $("#projects").show(1000);
-});
+    $("#projectsTab").click(function () {
+        "use strict";
+        $("#projects").show();
+    });
 
 
 });
