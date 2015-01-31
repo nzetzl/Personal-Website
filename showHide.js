@@ -1,31 +1,30 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
 $(document).ready(function () {
-    
 
     $(".tabs").click(function () {
         "use strict";
-        $(".section").hide();
+        $(".section").slideUp();
     });
-
+    
     $("#homeTab").click(function () {
         "use strict";
-        $("#home").show();
+        $("#home").delay(500).fadeIn();
     });
 
     $("#skillsTab").click(function () {
         "use strict";
-        $("#skills").show();
+        $("#skills").delay(500).fadeIn();
     });
 
     $("#interestsTab").click(function () {
         "use strict";
-        $("#interests").show();
+        $("#interests").delay(500).fadeIn();
     });
 
     $("#projectsTab").click(function () {
         "use strict";
-        $("#projects").show();
+        $("#projects").delay(500).fadeIn();
     });
 
 
