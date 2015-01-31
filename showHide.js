@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     $(".tabs").click(function () {
         "use strict";
-        $(".section").slideUp();
+        $(".section").fadeOut();
     });
     
     $("#homeTab").click(function () {
