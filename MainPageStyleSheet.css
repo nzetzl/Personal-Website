@@ -83,6 +83,20 @@ p {
     display: none;
 }
 
+table {
+    margin-right: auto;
+    margin-left: auto;
+    border-spacing: 10px;
+}
+
+th {
+    text-align: center;
+}
+
+span {
+    color: #147ABC;
+}
+
 #interests {
     display: none;
 }
