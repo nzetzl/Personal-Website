@@ -27,5 +27,4 @@ $(document).ready(function () {
         $("#projects").delay(500).fadeIn();
     });
 
-
 });
