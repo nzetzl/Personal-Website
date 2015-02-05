@@ -19,12 +19,28 @@ h1 {
     margin-bottom: 0px;
 }
 
+h2 {
+    font-size: 1.2em;
+    color: #147ABC;
+    padding-bottom: 0px;
+    margin-top: 0px;
+}
+
 p {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.5em;
     width: 300px;
+}
+
+p.projectInfo {
+    font-size: 1.0em;
+    width: 350px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
 }
 
 #tabList {
@@ -98,11 +114,12 @@ td {
     font-size: 1.2em;
 }
 
-span {
-    padding-right: 30px;
+td.dates {
+    text-align: center;
 }
 
 span {
+    padding-right: 30px;
     color: #147ABC;
 }
 
