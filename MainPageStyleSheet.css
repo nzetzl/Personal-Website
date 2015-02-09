@@ -148,6 +148,14 @@ span {
     padding-top: 0px;
 }
 
+#soccerPic {
+    width: 360px;
+    height: 300px;
+    margin-top: 10px;
+    position: relative;
+    left: 380px;
+}
+
 #projects {
     display: none;
 }
