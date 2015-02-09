@@ -23,9 +23,14 @@ h2 {
     font-size: 1.2em;
     color: #147ABC;
     padding-bottom: 0px;
-    margin-top: 0px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
+#firstHeading {
+    margin-top: 0px;
+}
 p {
     text-align: center;
     margin-left: auto;
@@ -35,12 +40,15 @@ p {
 }
 
 p.projectInfo {
+    line-height: 30px;
+    text-align: left;
     font-size: 1.0em;
     width: 350px;
     margin-bottom: 0px;
     margin-right: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-top: 0px;
 }
 
 #interestParagraph {
@@ -131,8 +139,31 @@ span {
     display: none;
 }
 
+#outdoorPic {
+    width: 400px;
+    height: 300px;
+}
+
 #projects {
     display: none;
+}
+
+#roboticsPic {
+    width: 460px;
+    height: 300px;
+}
+
+#soccerWebPic {
+    width: 440px;
+    height: 280px;
+}
+
+#personalWebPic {
+    width: 440px;
+    height: 350px;
+}
+.pictureColumn {
+    padding-left: 70px;
 }
 
 #address_break {
@@ -151,4 +182,8 @@ address {
 	font-style: italic; 
 	font-family: serif; 
 	font-size: .9em;
+}
+
+#addressDiv {
+    z-index: 1;
 }
