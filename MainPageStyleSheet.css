@@ -17,6 +17,7 @@ h1 {
     font-size: 6em;
     color: #147ABC;
     margin-bottom: 0px;
+    margin-top: 5px;
 }
 
 h2 {
@@ -31,6 +32,7 @@ h2 {
 #firstHeading {
     margin-top: 0px;
 }
+
 p {
     text-align: center;
     margin-left: auto;
@@ -73,11 +75,6 @@ p.projectInfo {
 
 .tabs:hover {
     color:#147ABC;
-}
-
-#projectsLink  {
-    text-decoration: none;
-    color: inherit;
 }
 
 #githubPic {
