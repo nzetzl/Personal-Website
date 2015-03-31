@@ -191,7 +191,10 @@ span {
     z-index: 1;
 }
 
-#arduinoDay {
+/*the next two are used for special events, 
+the first is the a tag or div tag that the image is in*/
+/*
+#specialEventLink {
     position: fixed;
     padding: 0px;
     margin: 0px;
@@ -199,12 +202,13 @@ span {
     top: 25px;
 }
 
-#arduinoPic {
+#specialEventPic {
     width: 150px;
     height: 300px;
     padding: 0px;
     margin: 0px;
 }
+*/
 
 a {
     margin-bottom: 0px;
