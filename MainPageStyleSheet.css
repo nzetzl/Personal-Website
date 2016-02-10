@@ -221,13 +221,10 @@ figcaption {
     position: relative;
     margin-top: 5px;
     padding-left: 4px;
+    text-decoration: none;
 }
 
 figcaption:hover {
     color: #147ABC;
     cursor: pointer;
-}
-
-#specialEvent a:visited {
-    color: black;
 }
