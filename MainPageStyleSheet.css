@@ -1,14 +1,9 @@
-f@charset "UTF-8";
-
 /* 
 CSS Document
 Author: Nick Zetzl
 website style sheet
 Last Update: 10/26/14
 */
-ol {
-    
-}
 
 h1 {
     text-align: center;
@@ -29,16 +24,36 @@ h2 {
     padding-bottom: 0px;
 }
 
-#firstHeading {
-    margin-top: 0px;
-}
-
 p {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.5em;
     width: 300px;
+}
+
+span {
+    padding-right: 30px;
+    color: #147ABC;
+}
+
+table {
+    margin-right: auto;
+    margin-left: auto;
+    border-spacing: 10px;
+}
+
+td {
+    font-size: 1.2em;
+}
+
+th {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.pictureColumn {
+    padding-left: 70px;
 }
 
 p.projectInfo {
@@ -51,17 +66,6 @@ p.projectInfo {
     margin-left: 0px;
     margin-top: 0px;
     padding-top: 0px;
-}
-
-#interestParagraph {
-    width: 400px;
-}
-
-#tabList {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: auto;
 }
 
 .tabs {
@@ -77,25 +81,18 @@ p.projectInfo {
     color:#147ABC;
 }
 
-#githubPic {
-    padding-left: 15px;
-    padding-right: 15px;
-    height: 180px;
-    width: 180x;
+td.dates {
+    text-align: center;
 }
 
-#linkedInPic {
-    padding-left: 15px;
-    padding-right: 15px;
-    height: 180px;
-    width: 180x;
+#address_break {
+    width: 100%;
+    position: fixed;
+    top: 95%;
 }
 
-#emailPic {
-    padding-left: 15px;
-    padding-right: 15px;
-    height: 175px;
-    width: 175x;
+#addressDiv {
+    z-index: 1;
 }
 
 #container {
@@ -104,41 +101,48 @@ p.projectInfo {
     margin-left: auto;
 }
 
-#resume {
-    font-size: 2em;
-    padding-top: 20px;
+#emailPic {
+    padding: 0px;
+    height: 175px;
+    width: 175x;
+    border-radius: 50%;
+    margin-left: 15px;
 }
 
-#skills {
-    display: none;
+#firstHeading {
+    margin-top: 0px;
 }
 
-table {
-    margin-right: auto;
-    margin-left: auto;
-    border-spacing: 10px;
+#friendsFindMePic {
+    width: 425px;
+    height: 325px;
+    margin-left: 50px;
+    border: 5px solid black;
 }
 
-th {
-    text-align: center;
-    font-size: 1.2em;
+#githubPic {
+    padding: 0px;
+    height: 180px;
+    width: 180x;
+    border-radius: 50%;
+    margin-right: 15px;
 }
 
-td {
-    font-size: 1.2em;
-}
-
-td.dates {
-    text-align: center;
-}
-
-span {
-    padding-right: 30px;
-    color: #147ABC;
+#interestParagraph {
+    width: 400px;
 }
 
 #interests {
     display: none;
+}
+
+#linkedInPic {
+    padding: 0px;
+    height: 180px;
+    width: 180x;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 #outdoorPic {
@@ -148,12 +152,11 @@ span {
     padding-top: 0px;
 }
 
-#soccerPic {
-    width: 360px;
-    height: 300px;
-    margin-top: 10px;
-    position: relative;
-    left: 380px;
+#personalWebPic {
+    margin-left: 50px;
+    padding-top: 50px;
+    width: 450px;
+    height: 350px;
 }
 
 #projects {
@@ -167,6 +170,18 @@ span {
     margin-left: 20px;
 }
 
+#skills {
+    display: none;
+}
+
+#soccerPic {
+    width: 360px;
+    height: 300px;
+    margin-top: 10px;
+    position: relative;
+    left: 380px;
+}
+
 #soccerWebPic {
     width: 440px;
     height: 280px;
@@ -175,54 +190,44 @@ span {
     padding-left: 20px;
 }
 
-#personalWebPic {
-    margin-left: 50px;
-    padding-top: 50px;
-    width: 450px;
-    height: 350px;
+#tabList {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: auto;
 }
 
-#friendsFindMePic {
-    width: 425px;
-    height: 325px;
-    margin-left: 50px;
-    border: 5px solid black;
-}
+/*the last sections are used for special events*/
 
-.pictureColumn {
-    padding-left: 70px;
-}
-
-#address_break {
-    width: 100%;
-    position: fixed;
-    top: 95%;
-}
-
-#addressDiv {
-    z-index: 1;
-}
-
-/*the next two are used for special events, 
-the first is the a tag or div tag that the image is in*/
-/*
-#specialEventLink {
-    position: fixed;
+#specialEvent figure {
+    position: absolute;
     padding: 0px;
     margin: 0px;
-    left: 20px;
-    top: 25px;
+    left: 0px;
+    top: 0px;
 }
 
-#specialEventPic {
-    width: 150px;
-    height: 300px;
+#specialEvent img {
+    width: 320px;
+    height: 220px;
     padding: 0px;
     margin: 0px;
+    border: 2px solid black;
+    border-radius: 5px;
 }
-*/
 
-a {
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+figcaption {
+    width: 300px;
+    position: relative;
+    margin-top: 5px;
+    padding-left: 4px;
+}
+
+figcaption:hover {
+    color: #147ABC;
+    cursor: pointer;
+}
+
+#specialEvent a:visited {
+    color: black;
 }

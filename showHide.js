@@ -4,7 +4,10 @@ $(document).ready(function () {
 
     $(".tabs").click(function () {
         "use strict";
-        $(".section").fadeOut();
+        var sectionID = $(this).attr("id");
+        if (sectionID != "resumeTab") {
+            $(".section").fadeOut();
+        }
     });
     
     $("#homeTab").click(function () {
@@ -25,6 +28,11 @@ $(document).ready(function () {
     $("#projectsTab").click(function () {
         "use strict";
         $("#projects").delay(500).fadeIn();
+    });
+    
+    $("#resumeTab").click(function () {
+        "use strict";
+        window.open("/Resume.pdf", "_blank");
     });
 
 });
