@@ -222,6 +222,7 @@ figcaption {
     margin-top: 5px;
     padding-left: 4px;
     text-decoration: none;
+    color: black;
 }
 
 figcaption:hover {
