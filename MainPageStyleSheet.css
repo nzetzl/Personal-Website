@@ -13,6 +13,7 @@ h1 {
     color: #147ABC;
     margin-bottom: 0px;
     margin-top: 5px;
+    cursor: pointer;
 }
 
 h2 {
