@@ -11,8 +11,8 @@ h1 {
     margin-left: auto;
     font-size: 6em;
     color: #147ABC;
-    margin-bottom: 0px;
-    margin-top: 5px;
+    margin-bottom: 0em;
+    margin-top: .5em;
     cursor: pointer;
 }
 
@@ -196,6 +196,7 @@ td.dates {
     margin-right: auto;
     text-align: center;
     width: auto;
+    margin-top: 5%;
 }
 
 /*the last sections are used for special events*/
