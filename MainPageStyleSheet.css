@@ -2,7 +2,7 @@
 CSS Document
 Author: Nick Zetzl
 website style sheet
-Last Update: 10/26/14
+Last Update: 3/2/17
 */
 
 h1 {
@@ -102,6 +102,13 @@ td.dates {
     margin-left: auto;
 }
 
+#description {
+    font-size: 1.5em;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    width: 600px;
+}
+
 #emailPic {
     padding: 0px;
     height: 175px;
@@ -127,6 +134,10 @@ td.dates {
     width: 180x;
     border-radius: 50%;
     margin-right: 15px;
+}
+
+#githubPic:hover {
+    color: green;
 }
 
 #interestParagraph {
@@ -196,7 +207,7 @@ td.dates {
     margin-right: auto;
     text-align: center;
     width: auto;
-    margin-top: 5%;
+    margin-top: 1%;
 }
 
 /*the last sections are used for special events*/
