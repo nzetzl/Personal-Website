@@ -1,0 +1,42 @@
+/* 
+CSS Document
+Author: Nick Zetzl
+website style sheet
+Last Update: 8/8/17
+*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 6em;
+    color: #147ABC;
+    margin-bottom: 0em;
+    margin-top: .5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+}
+
+a {
+	text-decoration: none;
+	color: lightgrey;
+}
+
+a:hover {
+	color: #147ABC;
+	cursor: pointer;
+}
+
+a:visited:hover {
+	color: #147ABC;
+}

@@ -2,16 +2,69 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="showHide.js"></script>
+    <script type="text/javascript" src="welcome.js"></script>
+	<script type="text/javascript" src="showHide.js"></script>
     <link type="text/css" rel="stylesheet" href="MainPageStyleSheet.css" />
     <link rel="icon" href="favicon.png">
     <link rel="icon" href="favicon.ico">
 	<title>Nick Zetzl</title>
-</head>
+    <script src="https://use.fontawesome.com/f6a6fe2e10.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee|Cabin|Lato|Montserrat|Montserrat+Alternates|Open+Sans|PT+Sans+Caption|Raleway" rel="stylesheet">
+    <script type="text/javascript">
+        $(document).ready(function() {
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+          ga('create', 'UA-102434332-1', 'auto');
+          ga('send', 'pageview');
+
+            $('.tabs').click(function (event){
+                ga('set', {
+                    page: '/' + event.target.innerHTML,
+                    title: event.target.innerHTML
+                });
+
+                ga('send', 'event', 'pageChange','click');
+                
+                //change url
+				history.pushState("newPage", "Nick Zetzl", "/");
+				location.hash = event.target.innerHTML;
+            });
+
+            $('#homeTab').click(function () {
+                //change url to home
+                history.pushState("newPage", "Nick Zetzl", "/");
+            });
+			
+			if (location.hash.length > 0) {
+				$(".tabs, h1").click(function () {
+					var sectionID = $(this).attr("id");
+					$(".section").hide();
+				});
+				console.log(location.hash);
+				$(".section").hide();
+				if (location.hash === "#Résumé") {
+					$("#Resume").show();
+				} else {
+					$(location.hash).show();
+				}
+			}
+/*			function changeUrl () {
+				history.pushState("newPage", "Nick Zetzl", "/");
+				window.location.href = 'index.html';
+				console.log("changed url");
+				window.history.go("/");
+			};*/
+        });
+    </script>
+</head>
 <body>
 
-	<h1 title="Have an awesome day today!" id="homeTab">Nick Zetzl</h1>
+    <div id="header">
+        <h1 id="homeTab">Nick Zetzl</h1>
+    </div>
     
     <ul id="tabList">
         <li class="tabs" id="skillsTab">Skills</li>
@@ -20,62 +73,62 @@
         <li class="tabs" id="resumeTab">Résumé</li>
     </ul>
     
-    <div class="section" id="home">
+    <div class="section" id="Home">
         <div id="container">
-            <a href="https://www.github.com/nzetzl" target="_blank">
-                <img src="Github_Logo.jpg" id="githubPic" alt="Github" />
+            <a href="https://www.github.com/nzetzl" target="_blank" class="extLinks">
+<!--                <img src="Github_Logo.jpg" id="githubPic" alt="Github" />-->
+                <i class="fa fa-github fa-5x"></i>
             </a>
 
-            <a href="https://www.linkedin.com/pub/nick-zetzl/a7/91b/701/" target="_blank">
-                <img src="LinkedIn_Logo.jpg" id="linkedInPic" alt="Linked In" />
+            <a href="https://www.linkedin.com/pub/nick-zetzl/a7/91b/701/" target="_blank" class="extLinks">
+<!--                <img src="LinkedIn_Logo.jpg" id="linkedInPic" alt="Linked In" />-->
+                <i class="fa fa-linkedin-square fa-5x"></i>
+
             </a>
 
-            <a href="mailto:nzetzl95@gmail.com">
-                <img src="Email_Icon.png" id="emailPic" alt="Email" />
+            <a href="mailto:nzetzl95@gmail.com" class="extLinks">
+<!--                <img src="Email_Icon.png" id="emailPic" alt="Email" />-->
+                <i class="fa fa-envelope fa-5x"></i>
             </a>
-            <p id="description">I'm always looking for a challenging adventure so if you're looking for travel partner, temp worker, intern, business partner, or really anything, hit me up and I'll be sure to get back to you!</p>
         </div>
 
     </div>
     
-    <div class="section" id="skills">
+    <div class="section" id="Skills">
         <table>
             <tr>
-                <th>Languages</th>
-                <th></th>
-                <th>IDEs</th>
-                <th></th>
-                <th>Other</th>
-                <th></th>
+                <th colspan="2">Languages</th>
+                <th colspan="2">IDEs</th>
+                <th colspan="2">Other</th>
             </tr>
             <tr>
-                <td>HTML</td>
+                <td>HTML/CSS</td>
                 <td><span>&#9733 &#9733 &#9733 &#9733 &#9733</span></td>
-                <td>Eclipse</td>
-                <td><span>&#9733 &#9733 &#9733 &#9733 &#9734</span></td>
+                <td>Brackets</td>
+                <td><span>&#9733 &#9733 &#9733 &#9733 &#9733</span></td>
                 <td>Agile/Scrum</td>
                 <td><span>&#9733 &#9733 &#9733 &#9733 &#9733</span></td>
             </tr>
             <tr>
-                <td>CSS</td>
-                <td><span>&#9733 &#9733 &#9733 &#9733 &#9733</span></td>
+                <td>Javascript</td>
+                <td><span>&#9733 &#9733 &#9733 &#9733 &#9734</span></td>
                 <td>Vim</td>
                 <td><span>&#9733 &#9733 &#9733 &#9733 &#9734</span></td>
                 <td>Unix</td>
                 <td><span>&#9733 &#9733 &#9733 &#9733 &#9733</span></td>
             </tr>
             <tr>
-                <td>Java</td>
-                <td><span>&#9733 &#9733 &#9733 &#9734 &#9734</span></td>
-                <td>Brackets</td>
+                <td>Python</td>
+                <td><span>&#9733 &#9733 &#9733 &#9733 &#9734</span></td>
+                <td>Visual Studio</td>
                 <td><span>&#9733 &#9733 &#9733 &#9733 &#9734</span></td>
                 <td>Git</td>
                 <td><span>&#9733 &#9733 &#9733 &#9733 &#9734</span></td>
             </tr>
             <tr>
                 <td>C</td>
-                <td><span>&#9733 &#9733 &#9733 &#9734 &#9734</span></td>
-                <td>Netbeans</td>
+                <td><span>&#9733 &#9733 &#9733 &#9733 &#9734</span></td>
+                <td>Android Studio</td>
                 <td><span>&#9733 &#9733 &#9733 &#9734 &#9734</span></td>
                 <td>Tmux</td>
                 <td><span>&#9733 &#9733 &#9733 &#9733 &#9734</span></td>
@@ -83,21 +136,36 @@
             <tr>
                 <td>Android</td>
                 <td><span>&#9733 &#9733 &#9733 &#9734 &#9734</span></td>
+                <td>Eclipse</td>
+                <td><span>&#9733 &#9733 &#9733 &#9734 &#9734</span></td>
+                <td>Bootstrap</td>
+                <td><span>&#9733 &#9733 &#9733 &#9734 &#9734</span></td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td><span>&#9733 &#9733 &#9733 &#9734 &#9734</span></td>
                 <td>XCode</td>
                 <td><span>&#9733 &#9733 &#9734 &#9734 &#9734</span></td>
-                <td>Pair-Programming</td>
-                <td><span>&#9733 &#9733 &#9733 &#9733 &#9734</span></td>
+                <td>AWS</td>
+                <td><span>&#9733 &#9733 &#9733 &#9734 &#9734</span></td>
+            </tr>
+            <tr>
+                <td>MySQL</td>
+                <td><span>&#9733 &#9733 &#9733 &#9734 &#9734</span></td>
+                <td>Sublime Text</td>
+                <td><span>&#9733 &#9733 &#9734 &#9734 &#9734</span></td>
+                <td>AngularJS</td>
+                <td><span>&#9733 &#9733 &#9733 &#9734 &#9734</span></td>
             </tr>
         </table>
     </div>
 
-    <div class="section" id="interests">
-        <p id="interestParagraph">Outside of coding, I enjoy the outdoors, traveling, soccer, basketball, and almost all genres of music.</p>
-        <img src="outdoorPic.jpg" id="outdoorPic" />
-        <img src="soccerPic.jpg" id="soccerPic" />
+    <div class="section" id="Interests">
+        <p id="interestParagraph">I'm really interested in two things: creating cool useful software, and cybersecurity. Outside of coding, I enjoy the outdoors, 
+			traveling, soccer, basketball, water sports, and almost all genres of music.</p>
     </div>
 
-    <div class="section" id="projects">
+    <div class="section" id="Projects">
         <table>
             <tr>
                 <th><h2 id="firstHeading">Robotics Club</h2></th>
@@ -112,7 +180,9 @@
                     the robot moved via remote controllers for the next minute and a half. I was in charge of programming the robot for 
                     both modes and making sure everything went as planned. Our robot made it to the quarterfinals of every tournament we 
                     participated in.</p></td>
-                <td class="pictureColumn"><img src="RoboticsPic.jpg" id="roboticsPic" /></td>
+                <td class="pictureColumn">
+                    <img src="RoboticsPic.jpg" id="roboticsPic" class="projectsImage" />
+                </td>
             </tr>
             <tr>
                 <th><h2>Soccer Website</h2></th>
@@ -126,15 +196,16 @@
                     coding project and I was able to discover my love of coding and of technology because of it. Click on the image to 
                     explore the website!</p></td>
                 <td class="pictureColumn">
-                    <a href="http://www.allaboutsoccer.xyz" target="_blank"><img src="allAboutSoccerPic.jpg" id="soccerWebPic" 
-                                                                                alt="www.allaboutsoccer.xyz" /></a>
+                    <a href="http://www.allaboutsoccer.xyz" target="_blank">
+                        <img src="allAboutSoccerPic.png" id="soccerWebPic" alt="www.allaboutsoccer.xyz" class="projectsImage"/>
+                    </a>
                 </td>
             </tr>
             <tr>
                 <th><h2>Personal Website(This Website)</h2></th>
             </tr>
             <tr>
-                <td class="dates">2015</td>
+                <td class="dates">2015 (ongoing project)</td>
             </tr>
             <tr>
                 <td><p class="projectInfo">This project is meant to show who I am, both professionally and personally, as well as to 
@@ -142,8 +213,9 @@
                     with my first website. After figuring out that I wanted to do some fadeIn/fadeOut effects for the tabs, I decided to 
                     teach myself a little bit of JQuery to accomplish this task.</p></td>
                 <td class="pictureColumn">
-                    <a href="http://www.nickzetzl.com" target="_self"><img src="personalWebsitePic.jpg" id="personalWebPic" 
-                                                                           alt="www.nickzetzl.com" /></a>
+                    <a href="http://www.nickzetzl.com" target="_self">
+                        <img src="personalWebsitePic.png" id="personalWebPic" alt="www.nickzetzl.com" class="projectsImage"/>
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -159,22 +231,33 @@
                     BoilerMake Hackathon at Purdue. This was the first full Android application I've worked on, so I learned a lot 
                     over one weekend. Also, this was the first application I've worked on that had to communicate with the Pebble
                     Smartwatch as well as the backend server.</p></td>
-                <td class="pictureColumn"><a href="http://devpost.com/software/friends-find-me-xgi6ze" target="_blank">
-                                            <img src="platforms.jpg" id="friendsFindMePic" alt="FriendsFindMe" /></a>
+                <td class="pictureColumn">
+                    <a href="http://devpost.com/software/friends-find-me-xgi6ze" target="_blank">
+                        <img src="platforms.jpg" id="friendsFindMePic" alt="FriendsFindMe" class="projectsImage"/>
+                    </a>
                 </td>
             </tr>
         </table>    
     </div>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+    <div class="section" id="Resume">
+        <iframe src="https://drive.google.com/file/d/0ByiUuJ7q2oX_ckRqYWpOQXhRLTQ/preview" width="700" height="800"></iframe>
+<!--            <embed src="/Resume.pdf" width="700" height="950" type='application/pdf' title="embedded resume pdf">-->
+    </div>
+    
+    <div id="welcomeBox" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="welcome">Hi, I'm Nick! Welcome to my website!</p>
+            <p id="description">I'm always looking for a challenging adventure so if you're looking for a travel partner, intern, 
+                business partner, or really anything, hit me up and I'll be sure to get back to you!</p>
+			<p id="lookingFor">I'm currently looking for an internship for Summer 2018, so if you're looking for an entreprenuerial minded software 
+				development intern, I'd love to talk!</p>
+            <span id="modalArrow" class="fa fa-arrow-right"></span>
+			<span id="skip">Skip Intro</span>
+        </div>
+    </div>
 
-  ga('create', 'UA-102434332-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 <!--
     <div id="specialEvent">
         <a>
