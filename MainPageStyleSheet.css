@@ -5,6 +5,15 @@ website style sheet
 Last Update: 8/8/17
 */
 
+a {
+	text-decoration: none;
+	color: #999999;
+}
+
+a:hover {
+	color: #147ABC;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
 }
