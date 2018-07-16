@@ -38,7 +38,6 @@ $(document).ready(function () {
             modal.style.display = "none";
         }
         
-        //ga('send', 'event', 'anyClick', 'click')
     };
     
     window.onload = function () {
