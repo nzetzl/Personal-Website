@@ -20,6 +20,7 @@ $(document).ready(function () {
 		count++;
 		if (count === numIntroItems - 1) {
 			$("#modalArrow").fadeOut();
+			$("#skip").fadeOut();
 		}
 		jQuery(p).fadeOut();
 		p = jQuery(p).next();

@@ -145,14 +145,6 @@ td.dates {
     margin-left: auto;
 }
 
-#description {
-    display: none;
-}
-
-#lookingFor {
-	display: none;
-}
-
 #firstHeading {
     margin-top: 0px;
 }
@@ -237,6 +229,10 @@ td.dates {
 #modalArrow:hover {
     color: #147ABC;
     cursor: pointer;
+}
+
+.welcomeSection {
+	display: none;
 }
 
 .modal-content {
