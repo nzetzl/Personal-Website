@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="welcome.js"></script>
 	<script type="text/javascript" src="showHide.js"></script>
     <link type="text/css" rel="stylesheet" href="MainPageStyleSheet.css" />
@@ -13,35 +13,35 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('.tabs').click(function (event){  
-                //change url
-				history.pushState("newPage", "Nick Zetzl", "/");
-				location.hash = event.target.innerHTML;
+							//change url
+							history.pushState("newPage", "Nick Zetzl", "/");
+							location.hash = event.target.innerHTML;
             });
 
             $('#homeTab').click(function () {
-                //change url to home
-                history.pushState("newPage", "Nick Zetzl", "/");
+							//change url to home
+							history.pushState("newPage", "Nick Zetzl", "/");
             });
 			
-			if (location.hash.length > 0) {
-				$(".tabs, h1").click(function () {
-					var sectionID = $(this).attr("id");
-					$(".section").hide();
-				});
-				console.log(location.hash);
-				$(".section").hide();
-				if (location.hash === "#Résumé") {
-					$("#Resume").show();
-				} else {
-					$(location.hash).show();
-				}
-			}
-/*			function changeUrl () {
-				history.pushState("newPage", "Nick Zetzl", "/");
-				window.location.href = 'index.html';
-				console.log("changed url");
-				window.history.go("/");
-			};*/
+						if (location.hash.length > 0) {
+							$(".tabs, h1").click(function () {
+								var sectionID = $(this).attr("id");
+								$(".section").hide();
+							});
+							console.log(location.hash);
+							$(".section").hide();
+							if (location.hash === "#Résumé") {
+								$("#Resume").show();
+							} else {
+								$(location.hash).show();
+							}
+						}
+			/*			function changeUrl () {
+							history.pushState("newPage", "Nick Zetzl", "/");
+							window.location.href = 'index.html';
+							console.log("changed url");
+							window.history.go("/");
+						};*/
         });
     </script>
 </head>
