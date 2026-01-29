@@ -30,7 +30,6 @@
                     var sectionID = $(this).attr("id");
                     $(".section").hide();
                 });
-                console.log(location.hash);
                 $(".section").hide();
                 if (location.hash === "#Résumé") {
                     $("#Resume").show();
@@ -38,12 +37,6 @@
                     $(location.hash).show();
                 }
             }
-            /*function changeUrl () {
-                history.pushState("newPage", "Nick Zetzl", "/");
-                window.location.href = 'index.html';
-                console.log("changed url");
-                window.history.go("/");
-            };*/
         });
     </script>
 </head>
